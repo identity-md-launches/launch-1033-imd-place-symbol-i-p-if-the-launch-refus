@@ -62,4 +62,51 @@ contract RobinhoodForkTest is PoolFixture {
         );
         assertEq(imd.balanceOf(address(router)), 0);
     }
+
+    function testRobinhoodExactOutputAndSeasonPotRedemption() public {
+        vm.warp(hook.launchTime() + 30 minutes);
+        uint256 beforeBuy = imd.balanceOf(alice);
+        (uint256 spent, uint256 received) = _swap(alice, true, false, 1 ether, 10 ether);
+        assertEq(received, 1 ether);
+        assertEq(imd.balanceOf(alice), beforeBuy - spent);
+        uint256 paint = spent / 0.05 ether;
+        assertEq(canvas.drops(alice), paint);
+        _paint(alice, 4095, 15);
+
+        uint256 beforeSell = imd.balanceOf(alice);
+        (, received) = _swap(alice, false, false, 0.25 ether, 10 ether);
+        assertEq(received, 0.25 ether);
+        assertEq(imd.balanceOf(alice), beforeSell + received);
+        assertEq(canvas.drops(alice), paint - 1);
+        uint256 pot = canvas.seasonPot();
+        assertGt(pot, 0);
+        vm.warp(canvas.seasonStart() + 7 days);
+        canvas.endSeason();
+        vm.startPrank(alice);
+        imd.approve(address(seasons), 3 ether);
+        seasons.bid(1, 1 ether);
+        seasons.bid(1, 2 ether);
+        assertEq(seasons.withdrawRefund(), 1 ether);
+        vm.stopPrank();
+        vm.warp(block.timestamp + 1 days);
+        seasons.finalize(1);
+        assertEq(seasons.ownerOf(1), alice);
+        assertEq(imd.balanceOf(address(seasons)), pot + 2 ether);
+        uint16[] memory ids = new uint16[](1);
+        ids[0] = 4095;
+        vm.prank(alice);
+        assertEq(seasons.claim(1, ids), pot + 2 ether);
+        vm.prank(alice);
+        canvas.claim();
+        canvas.claimTreasury();
+        assertEq(seasons.totalEscrow(), 0);
+        assertEq(imd.balanceOf(address(seasons)), 0);
+        assertEq(imd.balanceOf(address(router)), 0);
+        assertEq(token.balanceOf(address(router)), 0);
+        assertEq(
+            manager.balanceOf(address(hook), uint160(address(imd))) + canvas.totalPaid()
+                + canvas.totalTreasuryPaid() + pot,
+            canvas.totalFees()
+        );
+    }
 }
