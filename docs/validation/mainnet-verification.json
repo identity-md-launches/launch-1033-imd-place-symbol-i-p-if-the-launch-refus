@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-08T10:14:54.730Z",
+  "rpc": "https://robinhood-rpc.publicnode.com",
+  "sourceCommit": "4ba07cc1aa427c5cf5ca67f6a0494adf57222ec4",
+  "abiHashes": {
+    "PlaceToken": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+    "PlaceHook": "e0abfaed54e2136e5c1b1bdf3b990669c78db38100c78792bc544eed210c5b0c"
+  },
+  "runtimeCode": {
+    "hook": {
+      "address": "0x512b15372f42f687D366fc0c3342267DC73120cC",
+      "keccak256": "0x4071d7a0485af0ef5957bec2f9d494048af92b8634faec24ada33c7a93997d1a",
+      "bytes": 5727,
+      "compiledMatch": true
+    },
+    "canvas": {
+      "address": "0xda4339C3B9A4e2D6E1cD7706B8419CCC7d112086",
+      "keccak256": "0xc7fd5784f1b71b44285fb4c809b8d41eb8aa60e8494d0658071d6c7a37b1ce32",
+      "bytes": 9842,
+      "compiledMatch": true
+    },
+    "router": {
+      "address": "0x137182424E1B55819Da5CF06c2c0a65284a0d558",
+      "keccak256": "0xd95aec0cd3c8c25b9438d8911df83a0be58586c41e6f765b4280d423cafa2c06",
+      "bytes": 3748,
+      "compiledMatch": true
+    },
+    "token": {
+      "address": "0x9aa7Bef88C90D237B19afE77c8883ff119b606e7",
+      "keccak256": "0xb4a00e67e7ce24bf06af1b1ca3ccc0c1817e0ce58e6a20dbb60c63a3f91e3d5d",
+      "bytes": 1503,
+      "compiledMatch": true
+    },
+    "imd": {
+      "address": "0x5F7Bb59365ce557C26dbcAa4EE9d39A4b95B7127",
+      "keccak256": "0xa9a0e893f7d8327fe96f823291ad9199af5456c2f9fd80bbdeff29d1e91a93e2",
+      "bytes": 15448
+    },
+    "poolManager": {
+      "address": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+      "keccak256": "0xbd3881180b547f5fe817545743cfb4343e96b1bc6640dcd70c106b0066e95626",
+      "bytes": 24009
+    },
+    "seasons": {
+      "address": "0xD29E47E4c4C337cD4226dd523A73aF398585d1dC",
+      "keccak256": "0x3d6a338984119a6c9fb77acd9900c8af989bc3e3a09646889380d4e232fe868b",
+      "bytes": 11682,
+      "compiledMatch": true
+    }
+  },
+  "checks": [
+    "RPC chain ID is 4663",
+    "Generated block parameter round-trips to the requested decimal block",
+    "PlaceToken canonical ABI matches deployment",
+    "PlaceHook canonical ABI matches deployment",
+    "hook.canvas verifies configured address",
+    "hook.router verifies configured address",
+    "hook.imd verifies configured address",
+    "hook.token verifies configured address",
+    "hook.poolManager verifies configured address",
+    "canvas.seasons verifies configured address",
+    "hook has deployed code",
+    "PlaceHook runtime matches compiled source outside immutable fields",
+    "canvas has deployed code",
+    "Canvas runtime matches compiled source outside immutable fields",
+    "router has deployed code",
+    "PlaceRouter runtime matches compiled source outside immutable fields",
+    "token has deployed code",
+    "PlaceToken runtime matches compiled source outside immutable fields",
+    "imd has deployed code",
+    "poolManager has deployed code",
+    "seasons has deployed code",
+    "Seasons runtime matches compiled source outside immutable fields",
+    "Live Canvas returns 4096 colour bytes",
+    "balanceOf verifies temporary quote storage override",
+    "allowance verifies temporary quote storage override",
+    "PlaceRouter buy simulation returns a nonzero quote",
+    "Paint simulation caller has zero real paint",
+    "Underfunded paint eth_call returns InsufficientPaint",
+    "Underfunded paint did not succeed"
+  ],
+  "block": {
+    "number": 83235842,
+    "hash": "0xfde7d768b498fdfcf06acfac1a9d1e2c2cfe40dc0d63621b9c15e7c2815a3e96",
+    "timestamp": 1791454494
+  },
+  "canvas": {
+    "season": "1",
+    "bytes": 4096,
+    "painted": 0,
+    "pixel": 0,
+    "repaintPrice": "1",
+    "seasonStart": 1791452670,
+    "seasonEnd": 1792057470,
+    "seasonEndISO": "2026-10-15T09:44:30.000Z",
+    "hookFeeBps": "200"
+  },
+  "buyQuote": {
+    "method": "eth_call PlaceRouter.swap, exact input, temporary IMD balance and allowance override",
+    "simulationCaller": "0x137182424E1B55819Da5CF06c2c0a65284a0d558",
+    "inputIMD": "1.0",
+    "spentIMD": "1.0",
+    "receivedIP": "384672.017936498385191288",
+    "paintDrops": "20",
+    "rawResult": "0x0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000051751ca3f98bcd438178"
+  },
+  "paintError": {
+    "selector": "0x8e89355b",
+    "name": "InsufficientPaint",
+    "message": "Not enough paint. Buy i/p to earn drops, or select fewer pixels."
+  },
+  "transactionsSent": 0,
+  "limitations": [
+    "Quote uses verified eth_call funding and approval overrides. It does not establish that a visitor has enough balance or allowance.",
+    "No wallet was funded and no signed transaction was broadcast."
+  ]
+}

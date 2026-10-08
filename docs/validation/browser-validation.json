@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-08T10:39:10.742Z",
+  "fixtureChecks": [
+    "Amount precision, slippage bounds, distinct 50-pixel limit, season rounding and real InsufficientPaint selector",
+    "Export works at /place/ with verified runtime code, 16 colours, launch decay and tokenURI artwork",
+    "Pixel inspection shows owner, 24-hour paint count and live repaint price",
+    "Keyboard selection, pointer selection, pan, zoom controls and reset",
+    "Browser rejects the 51st distinct pixel without changing the batch",
+    "Positive amount/slippage validation and disconnected quote without approval or signing",
+    "Expired quotes cannot be submitted",
+    "EIP-6963 discovery, chain addition/switching and connected paint/token balances",
+    "Bounded paint review and clear mainnet InsufficientPaint error before wallet submission",
+    "Buy approval is exact, targets PlaceRouter, and declined wallet requests remain recoverable",
+    "Sell quote, output currency, paint behavior and input-driven quote invalidation",
+    "Trade earnings and bid refund reviews show real contract amounts from the fixture",
+    "Active bid, closed auction settlement, winner/sale price and final-owner season claim review",
+    "Due season enables permissionless ending and disables painting",
+    "Ownership and cumulative earnings leaderboard modes",
+    "Wallet account change clears account data and invalidates trade review",
+    "Six responsive widths, RTL mirror, 200% CSS zoom, reduced motion, loaded Pixel font and desktop/mobile axe audits",
+    "No fixture console errors or uncaught page errors"
+  ],
+  "liveChecks": [
+    {
+      "name": "Mainnet canvas and event indexing",
+      "connection": "Live · Robinhood Chain · block 83,250,234",
+      "history": "Event totals indexed through block 83,250,224 · 12-block confirmation delay. Live balances may include newer activity."
+    },
+    {
+      "name": "Disconnected mainnet buy quote",
+      "result": "Expected: 384672.01793 i/pMinimum received: 380825.297757133401339375 i/p.Paint credited: 20 drops.Hook fee at quote: 2%. Pool fee: 1.25%. Valid for 2 minutes."
+    },
+    {
+      "name": "Disconnected mainnet sell simulation (quote or explicit liquidity rejection)",
+      "result": "There is not enough liquidity for the full trade. Try a smaller amount."
+    },
+    {
+      "name": "Live mobile axe audit and browser console",
+      "violations": 0,
+      "consoleErrors": []
+    }
+  ],
+  "accessibility": [
+    {
+      "fixture": true,
+      "width": 390,
+      "violations": []
+    },
+    {
+      "fixture": true,
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "fixture": false,
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "consoleErrors": [],
+  "limitations": [
+    "Wallet approvals and submissions use an isolated EIP-1193 fixture that rejects submission; no live transaction was sent.",
+    "Desktop Chromium automation does not certify native mobile wallet apps or screen-reader behavior."
+  ],
+  "passed": true
+}

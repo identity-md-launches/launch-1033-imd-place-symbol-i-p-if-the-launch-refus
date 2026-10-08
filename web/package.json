@@ -1,0 +1,21 @@
+{
+  "name": "imd-place-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ../tools/frontend.mjs build",
+    "typecheck": "node ../tools/frontend.mjs typecheck",
+    "preview": "node ../tools/frontend.mjs preview",
+    "test": "node ../tools/frontend.mjs test"
+  },
+  "dependencies": {
+    "ethers": "6.13.5"
+  },
+  "devDependencies": {
+    "vite": "6.3.5",
+    "typescript": "5.8.3",
+    "@playwright/test": "1.55.1",
+    "axe-core": "4.10.3"
+  }
+}

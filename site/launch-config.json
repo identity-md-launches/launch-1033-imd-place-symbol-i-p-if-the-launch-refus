@@ -1,0 +1,61 @@
+{
+  "chainId": 4663,
+  "rpc": "https://robinhood-rpc.publicnode.com",
+  "explorer": "https://robin.etherscan.io",
+  "contracts": {
+    "hook": "0x512b15372f42f687D366fc0c3342267DC73120cC",
+    "canvas": "0xda4339C3B9A4e2D6E1cD7706B8419CCC7d112086",
+    "router": "0x137182424E1B55819Da5CF06c2c0a65284a0d558",
+    "token": "0x9aa7Bef88C90D237B19afE77c8883ff119b606e7",
+    "imd": "0x5F7Bb59365ce557C26dbcAa4EE9d39A4b95B7127",
+    "poolManager": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+    "seasons": "0xD29E47E4c4C337cD4226dd523A73aF398585d1dC"
+  },
+  "verifiedAtBlock": 83226393,
+  "rpcUrls": [
+    "https://robinhood-rpc.publicnode.com",
+    "https://rpc.mainnet.chain.robinhood.com"
+  ],
+  "logRpc": "https://rpc.mainnet.chain.robinhood.com",
+  "walletAddChain": {
+    "chainId": "0x1237",
+    "chainName": "Robinhood Chain",
+    "rpcUrls": [
+      "https://robinhood-rpc.publicnode.com",
+      "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://robin.etherscan.io"
+    ]
+  },
+  "launchBlock": 83218081,
+  "sourceCommit": "4ba07cc1aa427c5cf5ca67f6a0494adf57222ec4",
+  "abiHashes": {
+    "PlaceToken": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+    "PlaceHook": "e0abfaed54e2136e5c1b1bdf3b990669c78db38100c78792bc544eed210c5b0c"
+  },
+  "storage": {
+    "imd": {
+      "balance": 5,
+      "allowance": 6
+    },
+    "token": {
+      "balance": 0,
+      "allowance": 1
+    }
+  },
+  "codeHashes": {
+    "hook": "0x4071d7a0485af0ef5957bec2f9d494048af92b8634faec24ada33c7a93997d1a",
+    "canvas": "0xc7fd5784f1b71b44285fb4c809b8d41eb8aa60e8494d0658071d6c7a37b1ce32",
+    "router": "0xd95aec0cd3c8c25b9438d8911df83a0be58586c41e6f765b4280d423cafa2c06",
+    "token": "0xb4a00e67e7ce24bf06af1b1ca3ccc0c1817e0ce58e6a20dbb60c63a3f91e3d5d",
+    "imd": "0xa9a0e893f7d8327fe96f823291ad9199af5456c2f9fd80bbdeff29d1e91a93e2",
+    "poolManager": "0xbd3881180b547f5fe817545743cfb4343e96b1bc6640dcd70c106b0066e95626",
+    "seasons": "0x3d6a338984119a6c9fb77acd9900c8af989bc3e3a09646889380d4e232fe868b"
+  }
+}

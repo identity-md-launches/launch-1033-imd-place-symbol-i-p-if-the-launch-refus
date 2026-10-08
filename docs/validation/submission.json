@@ -1,0 +1,45 @@
+{
+  "method": "Complete Git bundle from an isolated copy of the original Git history plus all final working-tree files. The real repository Git metadata was not modified. This measurement precedes this small JSON report; reserve 65536 bytes for reporting overhead.",
+  "files": 486,
+  "workingTreeBytes": 4578270,
+  "compressedWorkingTreeBytes": 1534775,
+  "completeGitBundleBytes": 1446117,
+  "reportingReserveBytes": 65536,
+  "budgetedBundleBytes": 1511653,
+  "limitBytes": 8388608,
+  "underBudget": true,
+  "exportBytes": 438572,
+  "exportFiles": {
+    "dist/assets/PixelifySans-lrcDQVzA.ttf": {
+      "bytes": 79160,
+      "sha256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5"
+    },
+    "dist/assets/index-B7dKRouI.css": {
+      "bytes": 14658,
+      "sha256": "17a0b572dc9459dcc71d7f83f3018411e465f2a6dafb84a9d9d408c77a54c73c"
+    },
+    "dist/assets/index-CXqQBTMX.js": {
+      "bytes": 323383,
+      "sha256": "551d9cf56bcfd08a8af614587f7388392506acf1667a1e236f1b7b626141de32"
+    },
+    "dist/assets/logo-C-EzHnWs.svg": {
+      "bytes": 269,
+      "sha256": "1dcd2f50d55115945c8a5756ccee24908e52ddd6a2bde14a056682d9245d8575"
+    },
+    "dist/index.html": {
+      "bytes": 15539,
+      "sha256": "431ea4811316824e192a8a493149b1f8a68814f2f28584513bf16ffd6c9564ac"
+    },
+    "dist/licenses/ETHERS_LICENSE.md": {
+      "bytes": 1075,
+      "sha256": "a90ff8eedc2c3b456d6594d60aa287ba30ea911b3e0f1c4bb359a9c8f3f2e37e"
+    },
+    "dist/licenses/FONT_LICENSE.txt": {
+      "bytes": 4488,
+      "sha256": "b66ba46f511a851ab09998b5a5a9fdbb102545a3864cb993095e1745996873a7"
+    }
+  },
+  "protectedPathsChanged": false,
+  "generatedDependencyDirectoriesIncluded": false,
+  "submodules": false
+}

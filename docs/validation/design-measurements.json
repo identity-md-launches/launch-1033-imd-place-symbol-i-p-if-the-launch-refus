@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-08T10:34:20.550Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pairs": [
+    {
+      "selector": "body",
+      "foreground": "rgb(241, 240, 233)",
+      "background": "rgb(16, 16, 20)",
+      "contrast": 16.62,
+      "fontSize": "14px",
+      "opacity": "1"
+    },
+    {
+      "selector": "#fee-info",
+      "foreground": "rgb(173, 173, 188)",
+      "background": "rgb(25, 25, 31)",
+      "contrast": 7.9,
+      "fontSize": "12px",
+      "opacity": "1"
+    },
+    {
+      "selector": "#quote",
+      "foreground": "rgb(241, 240, 233)",
+      "background": "rgb(36, 36, 45)",
+      "contrast": 13.46,
+      "fontSize": "14px",
+      "opacity": "1"
+    },
+    {
+      "selector": "#swap-error",
+      "foreground": "rgb(255, 172, 185)",
+      "background": "rgb(25, 25, 31)",
+      "contrast": 9.88,
+      "fontSize": "12px",
+      "opacity": "1"
+    }
+  ],
+  "fontLoaded": true,
+  "canvasFocus": {
+    "outline": "rgb(255, 214, 53) solid 3px",
+    "offset": "-3px"
+  },
+  "walletFocus": {
+    "dialogOpen": true,
+    "activeId": "",
+    "focusOutline": "rgb(241, 240, 233) none 0px"
+  },
+  "escapeReturnsFocus": true,
+  "forcedColors": "rgba(5, 0, 73, 0.8)",
+  "fontAxes": [
+    {
+      "tag": "wght",
+      "min": 400,
+      "default": 400,
+      "max": 700,
+      "method": "read the local TTF fvar table"
+    }
+  ]
+}
