@@ -1,0 +1,14 @@
+{
+  "acceptedBundle": "https://api.imd.fun/bundles/624e4be3dda1c33c6258619a53a63170bebcefca7c0890da5dcd5fa2a34cfac0",
+  "acceptedJob": "834c0e87-f40c-4a5d-9935-03d865b034ec",
+  "acceptedCommit": "5136de402279c7d7e8f86bcf355446470d73fd34",
+  "downloadSHA256": "624e4be3dda1c33c6258619a53a63170bebcefca7c0890da5dcd5fa2a34cfac0",
+  "poolManifestReference": "https://raw.githubusercontent.com/identity-md-launches/launch-1015-src-work-sol-src-worklaunchhook3-sol/f67b812be1d993a88a80dff4904464bf1e4542b1/launch.json",
+  "changes": [
+    "Root launch.json with supplied pool settings and launch placeholders",
+    "Pull-based outbid refunds, site withdrawal flow, regression tests",
+    "Site deployment verification against the explicit pair and complete pool key",
+    "Test-only forge-std fail(string) compatibility backport required by the supplied protected hook test",
+    "Site refresh queuing and uncached latest reads after confirmed transactions; selected pixel info refresh"
+  ]
+}

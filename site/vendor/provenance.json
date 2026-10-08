@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.min.js",
+    "file": "site/vendor/ethers.min.js",
+    "sha256": "08f3be0965c8cefc3225e840f84de0fb50aaa0564bd9867d78e3017207b432ae"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ethers-io/ethers.js/v6.13.5/LICENSE.md",
+    "file": "site/vendor/ETHERS_LICENSE.md",
+    "sha256": "a90ff8eedc2c3b456d6594d60aa287ba30ea911b3e0f1c4bb359a9c8f3f2e37e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/pixelifysans/PixelifySans%5Bwght%5D.ttf",
+    "file": "site/vendor/PixelifySans.ttf",
+    "sha256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/pixelifysans/OFL.txt",
+    "file": "site/vendor/FONT_LICENSE.txt",
+    "sha256": "b66ba46f511a851ab09998b5a5a9fdbb102545a3864cb993095e1745996873a7"
+  }
+]

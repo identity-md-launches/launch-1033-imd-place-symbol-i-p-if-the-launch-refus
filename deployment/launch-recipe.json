@@ -1,0 +1,35 @@
+{
+  "kind": "univ4_hook",
+  "chainId": 4663,
+  "token": {
+    "source": "src/PlaceToken.sol:PlaceToken",
+    "name": "imd/place",
+    "symbol": "i/p",
+    "decimals": 18,
+    "totalSupply": "1000000000000000000000000000",
+    "constructorArgs": []
+  },
+  "hook": {
+    "source": "src/PlaceHook.sol:PlaceHook",
+    "constructorArgs": [
+      "$poolManager",
+      "$token",
+      "$factory"
+    ],
+    "flags": 8396
+  },
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "children": {
+    "canvas": "hook.canvas()",
+    "router": "hook.router()",
+    "seasons": "canvas.seasons()"
+  },
+  "administration": "none",
+  "siteDirectory": "site",
+  "note": "Companion deployment recipe. launch.json is the launch manifest; resolve its placeholders through the launch factory and discover the constructor-deployed children."
+}

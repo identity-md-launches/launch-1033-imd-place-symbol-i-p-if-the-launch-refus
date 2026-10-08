@@ -1,0 +1,18 @@
+{
+  "tool": "slither-analyzer",
+  "version": "0.11.6",
+  "scope": "src; dependencies and tests filtered",
+  "severityCounts": {
+    "Low": 13,
+    "Informational": 9
+  },
+  "detectorCounts": {
+    "reentrancy-benign": 2,
+    "reentrancy-events": 1,
+    "timestamp": 10,
+    "assembly": 5,
+    "cyclomatic-complexity": 4
+  },
+  "highOrMedium": [],
+  "detectorSuppressions": []
+}

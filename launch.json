@@ -1,0 +1,31 @@
+{
+  "kind": "univ4_hook",
+  "hook": {
+    "contract": "PlaceHook",
+    "constructorArgs": [
+      "$poolManager",
+      "$token",
+      "$factory"
+    ],
+    "permissions": [
+      "beforeInitialize",
+      "beforeSwap",
+      "afterSwap",
+      "beforeSwapReturnDelta",
+      "afterSwapReturnDelta"
+    ]
+  },
+  "token": {
+    "contract": "PlaceToken",
+    "name": "imd/place",
+    "symbol": "i/p",
+    "decimals": 18
+  },
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "Robinhood Chain 4663. Fixed supply 1,000,000,000 tokens minted to the deploying launch factory. Hook flags 8396 (0x20cc). Constructor creates Canvas and PlaceRouter; Canvas creates Seasons. Discover with hook.canvas(), hook.router(), canvas.seasons(). No owner, admin, upgrade or pause. Fees remain in IMD as requested. Standard launch-factory liquidity and distribution. Publish site/ after tools/configure-site.mjs verifies the deployed addresses."
+}
